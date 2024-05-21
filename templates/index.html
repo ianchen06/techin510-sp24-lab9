@@ -1,0 +1,27 @@
+{% extends '_base.html' %}
+
+{% block main %}
+  <div class="container">
+    <h1>Title</h1>
+    <div id="vis" class="w-100 text-center"></div>
+
+    {% for x in range(10) %}
+      <div class="card mt-2">
+        <div class="card-body">
+          <h5 class="card-title">My Card</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos sed maiores assumenda ipsam ad sit, magni laborum tenetur, aspernatur nam ex iste numquam! Laboriosam quam quaerat a temporibus impedit!</p>
+          <a href="#" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script type="text/javascript">
+    vegaEmbed('#vis', '/data')
+  </script>
+{% endblock %}

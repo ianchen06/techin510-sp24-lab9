@@ -1,0 +1,8 @@
+flask
+altair
+vega_datasets
+Flask-WTF
+psycopg2-binary
+Flask-SQLAlchemy
+gunicorn
+python-dotenv
