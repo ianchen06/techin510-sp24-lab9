@@ -1,4 +1,4 @@
-# Mobile App
+# Mobile Web App
 
 1. Layout
 1. Data fetching and rendering
