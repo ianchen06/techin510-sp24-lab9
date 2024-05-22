@@ -30,6 +30,8 @@ flask db upgrade
 
 This app uses [gunicorn](http://gunicorn.org) as the production [wsgi](https://www.fullstackpython.com/wsgi-servers.html) server
 
+Put the following command in Azure Web App, Settings > Configuration > Startup Command
+
 ```
 gunicorn -b :5001 --access-logfile - --error-logfile - app:app
 ```
